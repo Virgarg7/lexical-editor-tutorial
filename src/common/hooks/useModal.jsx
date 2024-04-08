@@ -3,6 +3,7 @@ import * as React from "react";
 
 import Modal from "../../components/ui/Modal";
 
+
 export default function useModal() {
   const [modalContent, setModalContent] = useState(null);
 
@@ -26,6 +27,7 @@ export default function useModal() {
       </Modal>
     );
   }, [modalContent, onClose]);
+  
 
   const showModal = useCallback(
     (
